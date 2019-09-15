@@ -6,13 +6,13 @@ By default, the most recent image is shown. Users can see a different image by s
 
 ### The following information is displayed:
 
-####Default view:
+#### Default view:
 
 * Photo/video thumbnail
 * Photo date
 * Copyright information
 
-####Modal view:
+#### Modal view:
 
 * Large photo/video
 * Photo date
@@ -21,12 +21,12 @@ By default, the most recent image is shown. Users can see a different image by s
 
 ### Screenshot(s):
 
-####Default widget
-![APOD default widget](https://github.com/lizkrznarich/zd-app/apod-widget-default.png)
+#### Default widget
+![APOD default widget](https://github.com/lizkrznarich/zd-app/blob/master/apod-widget-default.png)
 
-####Date picker
-![APOD widget date picker](https://github.com/lizkrznarich/zd-app/date-picker.png)
+#### Date picker
+![APOD widget date picker](https://github.com/lizkrznarich/zd-app/blob/master/date-picker.png)
 
-####Modal view
-![APOD widget modal](https://github.com/lizkrznarich/zd-app/modal.png)
+#### Modal view
+![APOD widget modal](https://github.com/lizkrznarich/zd-app/blob/master/modal.png)
 

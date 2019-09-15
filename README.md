@@ -1,6 +1,6 @@
 # Zendesk NASA Astronomy Picture of the Day (APOD) App
 
-This Zendesk app displays the [NASA Astronomy Picture of the Day](https://apod.nasa.gov/apod/astropix.html) )(APOD) in the ticket sidebar.
+This Zendesk app displays the [NASA Astronomy Picture of the Day (APOD)](https://apod.nasa.gov/apod/astropix.html) in the ticket sidebar.
 
 ## Installation
 
@@ -11,7 +11,7 @@ This Zendesk app displays the [NASA Astronomy Picture of the Day](https://apod.n
 
 1. Open any ticket, ex: https://yourinstance.zendesk.com/agent/tickets/1
 2. Click the Apps button in the upper right corner of the ticket view and click Refresh
-![Zendesk ticket app button](https://github.com/lizkrznarich/zd-app/blob/master/img/app-button.png)
+![Zendesk ticket app button](https://github.com/lizkrznarich/zd-app/blob/master/img/apps-button.png)
 
 3. By default, the most recent photo will appear
 ![APOD default widget](https://github.com/lizkrznarich/zd-app/blob/master/img/apod-widget-default.png)

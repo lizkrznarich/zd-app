@@ -50,7 +50,8 @@ $(document).ready(function(){
         headers: {Accept: "application/json"}
       })
       .done(function(data){
-        //photo for requested date may not be available yet
+        //APOD API doesn't provide timezone and we don't know what time new photos are uploaded each day
+        //depending on user timezone photo for requested date may not be available yet
         //show the photo date returned by the APOD api
         var displayDate="";
         if(data.date){

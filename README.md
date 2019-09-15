@@ -1,32 +1,29 @@
-# Zendesk NASA Astronomy Picture of the Day App
+# Zendesk NASA Astronomy Picture of the Day (APOD) App
 
-This Zendesk app displays the [NASA Astronomy Picture of the Day](https://apod.nasa.gov/apod/astropix.html) as a thumbnail in the ticket sidebar. When the thumbnail is clicked, a larger view opens in a modal.  
+This Zendesk app displays the [NASA Astronomy Picture of the Day](https://apod.nasa.gov/apod/astropix.html) )(APOD) in the ticket sidebar.
 
-By default, the most recent image is shown. Users can see a different image by selecting a previous date from the datepicker beneather the image.
+## Installation
 
-### The following information is displayed:
+1. Download the packaged app from [/tmp/app-20190915182608.zip](https://github.com/lizkrznarich/zd-app/blob/master/tmp/app-20190915182608.zip)
+2. Upload and install the app into your Zendesk instance as directed in [Uploading and installing a private app](https://develop.zendesk.com/hc/en-us/articles/360001069347-Uploading-and-installing-a-private-app)
 
-#### Default view:
+## Usage
 
-* Photo/video thumbnail
-* Photo date
-* Copyright information
+1. Open any ticket, ex: https://yourinstance.zendesk.com/agent/tickets/1
+2. Click the Apps button in the upper right corner of the ticket view and click Refresh
+![Zendesk ticket app button](https://github.com/lizkrznarich/zd-app/blob/master/img/app-button.png)
 
-#### Modal view:
+3. By default, the most recent photo will appear
+![APOD default widget](https://github.com/lizkrznarich/zd-app/blob/master/img/apod-widget-default.png)
 
-* Large photo/video
-* Photo date
-* Copyright information
-* Detailed description
+4. To see a different photo, choose a date using the date picker beneath the photo thumbnail
+![APOD widget date picker](https://github.com/lizkrznarich/zd-app/blob/master/img/date-picker.png)
 
-### Screenshot(s):
+5. Click the photo thumbnail to open a larger view in a modal
+![APOD widget modal](https://github.com/lizkrznarich/zd-app/blob/master/img/modal.png)
 
-#### Default widget
-![APOD default widget](https://github.com/lizkrznarich/zd-app/blob/master/apod-widget-default.png)
+### Notes: 
+- Some APODs are Youtube videos! 
+- APOD doesn't tell us what timezone they're using, or what time a new photo is uploaded each day, so the photo for the user's current day may not be available yet. In that case, the most recent photo is displayed.
 
-#### Date picker
-![APOD widget date picker](https://github.com/lizkrznarich/zd-app/blob/master/date-picker.png)
-
-#### Modal view
-![APOD widget modal](https://github.com/lizkrznarich/zd-app/blob/master/modal.png)
 

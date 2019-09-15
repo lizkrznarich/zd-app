@@ -1,0 +1,34 @@
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+small{
+    font-style: italic;
+}
+
+label{
+    font-weight: 700;
+}
+
+html {
+    overflow: hidden;
+}
+
+#datePicker{
+    margin-top: 1em;
+}
+
+#videoModal {
+    padding: 0;
+    margin: 0;
+}
+
+#videoModal.btn {
+    font-size: .8em;
+}
+
+.explanation {
+    font-size: .8em;
+    margin-top: 1em;
+}

@@ -25,7 +25,7 @@ By default, the most recent image is shown. Users can see a different image by s
 ![APOD default widget](https://github.com/lizkrznarich/zd-app/blob/master/apod-widget-default.png)
 
 #### Date picker
-![APOD widget date picker](https://github.com/lizkrznarich/zd-app/blob/master/date-picker.png)
+![APOD widget date picker](https://github.com/lizkrznarich/zd-app/blob/master/date-picker.png =400x)
 
 #### Modal view
 ![APOD widget modal](https://github.com/lizkrznarich/zd-app/blob/master/modal.png)

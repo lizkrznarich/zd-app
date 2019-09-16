@@ -1,7 +1,9 @@
 $(document).ready(function(){
+    
     //not a secret - key is sent as url param in APOD api request
     var nasaApiKey = "TFtUNCGWFpQCN7pAdwvgLARTk2ENUR2M17kuRm3w";
-    //check if we are in the sidebar or modal
+    
+    //check if we are in the modal view
     var isModal = false;
     if(window.location.pathname.indexOf("modal")>0){
       isModal = true;
@@ -17,6 +19,7 @@ $(document).ready(function(){
       var today = new Date();
       requestedDate = formatDate(today);
     }
+    
     //get photo
     getPhoto(requestedDate);
     
@@ -64,13 +67,15 @@ $(document).ready(function(){
         if(data.copyright){
           copyright = "Copyright: " + data.copyright;
         }
-        
+
+        //if APOD is image, show in img
         if(data.url && data.media_type=="image"){
           $('#apod').html('<small>' + displayDate + '</small><h2>' + data.title + '</h2><img class="img-thumbnail img-responsive" src="' + data.url + '" alt="' + data.title + '" /><small>' + copyright + '</small>'
           );
         }
+
         //surprise! some APODs are actually youtube videos
-        //show videos in youtube iframe
+        //if APOD is video, show in youtube iframe
         if(data.url && data.media_type=="video"){
           var videoWidth = "";
           var videoHeight = "";
@@ -80,7 +85,9 @@ $(document).ready(function(){
           } 
           $('#apod').html('<small>' + displayDate + '</small><h2>' + data.title + '</h2><iframe class="img-thumbnail img-responsive" src="' + data.url + '" lt="' + data.title + '" width="' + videoWidth + '" height="' + videoHeight + '" frameborder="0" allow="encrypted-media"></iframe><small>' + copyright + '</small><button class="btn btn-link" id="videoModal"> Open larger view</button>'
           );
-        } 
+        }
+
+        //if we're in the modal view, show full description
         if(isModal){
           $('#videoModal').remove();
           $('#apod img, #apod iframe').removeClass('img-thumbnail');
@@ -90,6 +97,7 @@ $(document).ready(function(){
         }
       })
       .fail(function(){
+          //if APOD API request fails, show default image
           console.log("Oh noes! Error getting photo");
           $('#apod').html('<h2>Sorry, something went wrong getting the NASA picture of the day! Plese enjoy this photo of Camilla the space chicken instead.</h2><img id="apodThumb" class="img-responsive" src="Space_chicken.jpg" alt="Camilla the space chicken" /><small><a href="https://commons.wikimedia.org/wiki/File:Space_chicken.jpg">Space Chicken</a> by <a href="https://commons.wikimedia.org/wiki/User:BCampbell_(WMF)">BCampbell (WMF)</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY SA 4.0</a></small>'
           );
@@ -103,6 +111,7 @@ $(document).ready(function(){
 
     $('#apod, #videoModal').click(function(event){
       event.preventDefault();
+      //open modal only if we're not already in modal view
       if (!isModal) {
         client.invoke('instances.create', {
           location: 'modal',

@@ -5,6 +5,7 @@ h2 {
 
 small{
     font-style: italic;
+    display: block;
 }
 
 label{
@@ -34,5 +35,5 @@ html {
 }
 
 .img-thumbnail {
-    max-height: 400px;
+    max-height: 300px;
 }

@@ -4,7 +4,7 @@ This Zendesk app displays the [NASA Astronomy Picture of the Day (APOD)](https:/
 
 ## Installation
 
-1. Download the packaged app from [/tmp/app-20190915190322.zip](https://github.com/lizkrznarich/zd-app/blob/master/tmp/app-20190915190322.zip)
+1. Download the packaged app from [/tmp/app-20190916104812.zip](https://github.com/lizkrznarich/zd-app/blob/master/tmp/app-20190916104812.zip)
 2. Upload and install the app into your Zendesk instance as directed in [Uploading and installing a private app](https://develop.zendesk.com/hc/en-us/articles/360001069347-Uploading-and-installing-a-private-app)
 
 ## Usage

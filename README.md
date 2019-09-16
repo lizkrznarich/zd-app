@@ -23,7 +23,7 @@ This Zendesk app displays the [NASA Astronomy Picture of the Day (APOD)](https:/
 ![APOD widget modal](https://github.com/lizkrznarich/zd-app/blob/master/img/modal.png)
 
 ### Notes: 
-- Some APODs are Youtube videos! 
+- Some APODs are Youtube videos! To see an example, choose Sept 3, 2019 in the datepicker
 - APOD doesn't tell us what timezone they're using, or what time a new photo is uploaded each day, so the photo for the user's current day may not be available yet. In that case, the most recent photo is displayed.
 
 
